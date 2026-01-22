@@ -13,35 +13,13 @@ A machine learning project for predicting diabetes diagnosis using patient healt
 This project develops a binary classification model to predict diabetes diagnosis (diabetic/non-diabetic) using the **TAIPEI diabetes dataset** containing health metrics from 15,000 women patients.
 
 ### Key Features:
-- ✅ **Comprehensive EDA**: Univariate, bivariate, and correlation analysis
-- ✅ **Advanced Feature Engineering**: Binning, interaction terms, and derived features
-- ✅ **Multiple ML Models**: XGBoost, Gradient Boosted Trees, Neural Networks, Logistic Regression
-- ✅ **Hyperparameter Tuning**: RandomizedSearchCV optimization
-- ✅ **Model Evaluation**: Cross-validation, ROC curves, confusion matrices, calibration plots
-- ✅ **Web Application**: Streamlit interface for real-time predictions
-- ✅ **Production Ready**: Model deployment with serialized artifacts
+- **Comprehensive EDA**: Univariate, bivariate, and correlation analysis
+- **Advanced Feature Engineering**: Binning, interaction terms, and derived features
+- **Multiple ML Models**: XGBoost, Gradient Boosted Trees, Neural Networks, Logistic Regression
+- **Model Evaluation**: Cross-validation, ROC curves, confusion matrices, calibration plots
+- **Web Application**: Streamlit interface for real-time predictions
+- **Production Ready**: Model deployment with serialized artifacts
 
----
-
-## 📁 Project Structure
-
-```
-Project Portfolio/
-│
-├── Data_Preparation_n_model (2).ipynb  # Main analysis notebook
-├── app.py                               # Streamlit web application
-├── requirements.txt                     # Python dependencies
-├── .gitignore                          # Git ignore rules
-│
-├── TAIPEI_diabetes.csv                 # Dataset (15,000 samples)
-├── best_diabetes_model.pkl             # Trained XGBoost model
-├── scaler.pkl                          # StandardScaler for preprocessing
-├── feature_names.pkl                   # Feature list for consistency
-│
-└── README.md                           # This file
-```
-
----
 
 ## 📋 Dataset Description
 
@@ -110,13 +88,12 @@ jupyter notebook "Data_Preparation_n_model (2).ipynb"
 ```
 
 **Notebook Sections**:
-- 📊 Exploratory Data Analysis (EDA)
-- 🔧 Data Preparation & Feature Engineering
-- 🤖 Model Training (4 algorithms)
-- ✅ Cross-Validation & Hyperparameter Tuning
-- 📈 Model Evaluation & Comparison
-- 🎯 Feature Importance Analysis
-- 💾 Model Deployment Export
+- Exploratory Data Analysis (EDA)
+- Data Preparation & Feature Engineering
+- Model Training (4 algorithms)
+- Model Evaluation & Comparison
+- Feature Importance Analysis
+- Model Deployment Export
 
 ### 2. Streamlit Web Application
 
@@ -129,15 +106,15 @@ streamlit run app.py
 The app will open in your browser at `http://localhost:8501`
 
 **Features**:
-- 📝 Manual input form with validation
-- 📤 Batch CSV upload
-- 🎯 Real-time probability predictions
-- 📊 Interactive visualizations
-- 💡 Risk interpretation
+- Manual input form with validation
+- Batch CSV upload
+- Real-time probability predictions
+- Interactive visualizations
+- Risk interpretation
 
 ---
 
-## 🧠 Machine Learning Pipeline
+## Machine Learning Pipeline
 
 ### 1. Data Preparation
 - **Outlier Handling**: IQR-based capping for `TricepsThickness` and `SerumInsulin`
@@ -168,9 +145,9 @@ The app will open in your browser at `http://localhost:8501`
 
 ### 4. Key Features (by Importance)
 
-1. 🥇 **PlasmaGlucose** - Strongest predictor
-2. 🥈 **BMI** - Major risk factor
-3. 🥉 **Age** - Significant contributor
+1. **PlasmaGlucose** - Strongest predictor
+2. **BMI** - Major risk factor
+3. **Age** - Significant contributor
 4. **Glucose_BMI_interaction** - Powerful interaction term
 5. **DiabetesPedigree** - Family history impact
 6. **SerumInsulin** - Secondary biomarker
@@ -199,9 +176,9 @@ The app will open in your browser at `http://localhost:8501`
 2. Enter patient health metrics using the input form
 3. Click **"Predict Diabetes Risk"**
 4. View:
-   - 🎯 Prediction result (Diabetic/Not Diabetic)
-   - 📊 Probability score with confidence meter
-   - 💡 Risk interpretation
+   - Prediction result (Diabetic/Not Diabetic)
+   - Probability score with confidence meter
+   - Risk interpretation
 
 ### Batch Prediction
 
@@ -218,7 +195,7 @@ The app will open in your browser at `http://localhost:8501`
 
 ---
 
-## 📊 Evaluation Metrics Explained
+## Evaluation Metrics Explained
 
 | Metric | Medical Interpretation |
 |--------|------------------------|
@@ -230,26 +207,6 @@ The app will open in your browser at `http://localhost:8501`
 
 **For diabetes prediction, Recall is prioritized** to minimize missing diabetic patients.
 
----
-
-## 🔧 Dependencies
-
-Core libraries (see `requirements.txt`):
-
-```
-streamlit          # Web application framework
-pandas             # Data manipulation
-numpy              # Numerical operations
-scikit-learn       # ML algorithms & preprocessing
-xgboost            # Gradient boosting
-joblib             # Model serialization
-seaborn            # Statistical visualization
-matplotlib         # Plotting
-imbalanced-learn   # SMOTE (optional)
-tensorflow         # Neural network
-```
-
----
 
 ## 📝 Model Deployment Files
 
@@ -261,7 +218,7 @@ Generated after running the notebook:
 
 ---
 
-## 🎯 Clinical Insights
+## Clinical Insights
 
 ### Top Risk Factors Identified:
 
@@ -283,25 +240,25 @@ Generated after running the notebook:
 ## 🚨 Important Notes
 
 ### Limitations:
-- ⚠️ **Not a substitute for professional medical diagnosis**
-- ⚠️ Dataset is specific to women; generalization may vary
-- ⚠️ Model trained on TAIPEI dataset; regional differences may apply
+- **Not a substitute for professional medical diagnosis**
+- Dataset is specific to women; generalization may vary
+- Model trained on TAIPEI dataset; regional differences may apply
 
 ### Recommendations:
-- ✅ Use as a screening tool or risk assessment aid
-- ✅ Always consult healthcare professionals for diagnosis
-- ✅ Combine with additional clinical tests (HbA1c, fasting glucose)
-- ✅ Regular model retraining with new data
+- Use as a screening tool or risk assessment aid
+- Always consult healthcare professionals for diagnosis
+- Combine with additional clinical tests (HbA1c, fasting glucose)
+- Regular model retraining with new data
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 This is an academic project for Data Mining coursework (Year 3). Feedback and suggestions are welcome!
 
 ---
 
-## 📚 References
+## References
 
 - **Dataset**: TAIPEI diabetes dataset (modified from Pima Indians Diabetes Database)
 - **Algorithms**: XGBoost, Gradient Boosting, Neural Networks, Logistic Regression
@@ -353,4 +310,4 @@ streamlit run app.py
 
 ---
 
-**⭐ Medical AI for Diabetes Screening | Built with ❤️ and XGBoost**
+**Medical AI for Diabetes Screening | Built with ❤️ and XGBoost**
